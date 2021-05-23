@@ -22,9 +22,99 @@
     </header>
 
     <main>
-
+      <h1>Поиск гостиницы</h1>
+      <section>
+        <h2>Фильтр гостиниц</h2>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+                <label for="filter-swimming-pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking-lot" id="filter-parking-lot">
+                <lable for="filter-parking-lot">Парковка</lable>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <label for="filter-wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="filter-motel" checked>
+                <lable for="filter-motel">Мотель</lable>
+              </li>
+              <li>
+                <input type="checkbox" name="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки, &#8381;:</legend>
+            от 0<input type="range" min="0" max="3000" step="1000">до 3000
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+        <figure>
+          <img src="https://via.placeholder.com/1200x217" alt="">
+        </figure>
+      </section>
+      <section>
+        <h2>Результаты поиска</h2>
+        <span>Найдено: 3</span>
+        <p>Сортировка:</p>
+        <ul>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По рейтингу</a></li>
+        </ul>
+        <p>&#9650; &#9660;</p>
+        <ul>
+          <li>
+            <h3>Amara Resort & Spa</h3>
+            <p>гостиница</p>
+            <p>от 4000 &#8381;</p>
+            <button type="button">Подробнее</button>
+            <button type="button">Забронировать</button>
+            <p>&#9733; &#9733; &#9733; &#9733;</p>
+            <p>Рейтинг: 8,5</p>
+            <img src="https://via.placeholder.com/135x90" alt="">
+          </li>
+          <li>
+            <h3>Desert Quail Inn</h3>
+            <p>мотель</p>
+            <p>от 3000 &#8381;</p>
+            <button type="button">Подробнее</button>
+            <button type="button">Забронировать</button>
+            <p>&#9733; &#9733; &#9733;</p>
+            <p>Рейтинг: 8,9</p>
+            <img src="https://via.placeholder.com/135x90" alt="">
+          </li>
+          <li>
+            <h3>Villas at Poco Diablo</h3>
+            <p>апартаменты</p>
+            <p>от 2000 &#8381;</p>
+            <button type="button">Подробнее</button>
+            <button type="button">Забронировать</button>
+            <p>&#9733; &#9733;</p>
+            <p>Рейтинг: 9,2</p>
+            <img src="https://via.placeholder.com/135x90" alt="">
+          </li>
+        </ul>
+      </section>
     </main>
-    
+
     <footer>
         <section>
           <h2>Контакты</h2>

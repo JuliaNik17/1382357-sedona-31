@@ -32,7 +32,7 @@
       <section class="filters">
         <h2>Фильтр гостиниц</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <fieldset class="infrastructure">
             <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option filter-checkbox">
@@ -49,7 +49,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="hotel-type">
             <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option filter-checkbox">
@@ -66,7 +66,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="price">
             <legend>Стоимость в сутки, &#8381;:</legend>
             <p>от 0</p>
             <p>до 3000</p>
@@ -74,10 +74,8 @@
           </fieldset>
           <button type="submit" class="filter-button button">Показать</button>
         </form>
-        <figure>
-          <!-- <img src="img/background_catalog.jpg" width="1200" height="217" alt=""> -->
-        </figure>
       </section>
+      
       <section class="search-results">
         <h2>Результаты поиска</h2>
         <span>Найдено: 3</span>
@@ -95,58 +93,70 @@
           </svg></a>
         <ul class="results">
           <li>
-            <h3><a href="#">Amara Resort & Spa</a></h3>
-            <p>гостиница</p>
-            <p>от 4000 &#8381;</p>
-            <button type="button" class="more-info-button button">Подробнее</button>
-            <button type="button" class="booking-button button">Забронировать</button>
-            <p><svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-              </svg>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                  </svg>
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                    </svg></p>
-            <p class="result-rating">Рейтинг: 8,5</p>
             <img src="img/amara_resort_hotel.jpg" width="135" height="90" alt="">
-          </li>
-          <li>
-            <h3><a href="#">Desert Quail Inn</a></h3>
-            <p>мотель</p>
-            <p>от 3000 &#8381;</p>
-            <button type="button" class="more-info-button button">Подробнее</button>
-            <button type="button" class="booking-button button">Забронировать</button>
-            <p><svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-              </svg>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+            <div class="results-info">
+              <h3><a href="#">Amara Resort & Spa</a></h3>
+              <p>гостиница</p>
+              <p>от 4000 &#8381;</p>
+              <button type="button" class="more-info-button button">Подробнее</button>
+              <button type="button" class="booking-button button">Забронировать</button>
+            </div>
+            <div class="results-rating">
+              <p><svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
                 </svg>
                 <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                  </svg></p>
-            <p class="result-rating">Рейтинг: 8,9</p>
-            <img src="img/desert_quail_inn.jpg" width="135" height="90" alt="">
+                </svg>
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg>
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg></p>
+              <p class="result-rating">Рейтинг: 8,5</p>
+            </div>
           </li>
           <li>
-            <h3><a href="#">Villas at Poco Diablo</a></h3>
-            <p>апартаменты</p>
-            <p>от 2000 &#8381;</p>
-            <button type="button" class="more-info-button button">Подробнее</button>
-            <button type="button" class="booking-button button">Забронировать</button>
-            <p><svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-              </svg>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+            <img src="img/desert_quail_inn.jpg" width="135" height="90" alt="">
+            <div class="results-info">
+              <h3><a href="#">Desert Quail Inn</a></h3>
+              <p>мотель</p>
+              <p>от 3000 &#8381;</p>
+              <button type="button" class="more-info-button button">Подробнее</button>
+              <button type="button" class="booking-button button">Забронировать</button>
+            </div>
+            <div class="results-rating">
+              <p><svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg>
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg>
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
                 </svg></p>
-            <p class="result-rating">Рейтинг: 9,2</p>
+              <p class="result-rating">Рейтинг: 8,9</p>
+            </div>
+          </li>
+          <li>
             <img src="img/villas_at_poco_diablo.jpg" width="135" height="90" alt="">
+            <div class="results-info">
+              <h3><a href="#">Villas at Poco Diablo</a></h3>
+              <p>апартаменты</p>
+              <p>от 2000 &#8381;</p>
+              <button type="button" class="more-info-button button">Подробнее</button>
+              <button type="button" class="booking-button button">Забронировать</button>
+            </div>
+            <div class="results-rating">
+              <p><svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg>
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg></p>
+              <p class="result-rating">Рейтинг: 9,2</p>
+            </div>
           </li>
         </ul>
       </section>

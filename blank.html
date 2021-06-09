@@ -2,21 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Blank page</title>
+    <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="page-body">
 
-    <header>
-      <nav>
-        <a href="index.html">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
@@ -26,33 +28,33 @@
     </header>
 
     <main>
-
+      <h1>Blank page</h1>
     </main>
     
-    <footer>
-      <section>
-        <h2>Контакты</h2>
+    <footer class="main-footer">
+      <section class="footer-contacts">
+        <h2 class="hidden">Контакты</h2>
         <p>#Visitsedona</p>
-        <p>+7 800 555-86-28</p>
+        <p><a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
       </section>
 
-      <section>
-        <h2>Мы в соцсетях</h2>
+      <section class="footer-social">
+        <h2 class="hidden">Мы в соцсетях</h2>
         <ul>
           <li>
-            <a href="#">Twitter<img src="img/icon_twitter.svg" width="17" height="17" alt=""></a>
+            <a class="social-button" href="#"><span class="hidden">Twitter</span><img src="img/icon_twitter.svg" width="17" height="17" alt=""></a>
           </li>
           <li>
-            <a href="#">Facebook<img src="img/icon_fb.svg" width="12" height="22" alt=""></a>
+            <a class="social-button" href="#"><span class="hidden">Facebook</span><img src="img/icon_fb.svg" width="12" height="22" alt=""></a>
           </li>
           <li>
-            <a href="#">Youtube<img src="img/icon_youtube.svg" width="20" height="16" alt=""></a>
+            <a class="social-button" href="#"><span class="hidden">Youtube</span><img src="img/icon_youtube.svg" width="20" height="16" alt=""></a>
           </li>
         </ul>
       </section>
 
-      <p>
-        Website by
+      <section class="footer-copyright">
+        <p class="footer-copyright-text">Website by</p>
         <a href="https://htmlacademy.ru"><svg class="footer-logo" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z"/>
           <path d="M11.6466 4.52562C10.0863 4.52562 8.82534 5.23341 8.03454 6.26294H7.94905V0H5.91864V15.4429H7.94905V10.1451C7.94905 8.02172 9.27418 6.49888 11.2191 6.49888C13.0572 6.49888 14.1258 7.87158 14.1258 9.71614V15.4429H16.1563V9.35153C16.1563 6.41308 14.3396 4.52562 11.6466 4.52562Z"/>
@@ -67,6 +69,7 @@
           <path d="M98.1985 17.8762C96.5713 17.8762 95.3295 18.6651 94.6443 19.9232H94.5799C93.9591 18.6865 92.8029 17.8762 91.2184 17.8762C89.8054 17.8762 88.7347 18.6225 88.0924 19.6673H88.0068V18.1534H86.0583V28.7079H88.0924V23.2921C88.0924 21.3091 89.1417 19.8592 90.7261 19.8165C92.2247 19.7739 93.1028 20.84 93.1028 22.4392V28.7079H95.1368V23.1215C95.1368 20.7547 96.5499 19.8165 97.7703 19.8165C99.2477 19.8165 100.125 20.84 100.125 22.4392V28.7079H102.16V22.226C102.16 19.6673 100.704 17.8762 98.1985 17.8762Z"/>
           <path d="M109.441 27.0237L105.801 18.1536H103.553L108.392 29.7104L108.371 29.753C108.028 30.6272 107.643 30.947 106.701 30.947H104.196V32.9726H106.701C108.542 32.9726 109.527 32.1411 110.212 30.3499L114.88 18.1536H112.803L109.441 27.0237Z"/>
           </svg></a>
+      </section>
 
     </footer>
   </body>

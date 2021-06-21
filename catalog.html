@@ -69,10 +69,15 @@
           <fieldset class="price">
             <legend>Стоимость в сутки, &#8381;:</legend>
             <div class="price-per-day">
-              <p class="price-per-day-text">от 0</p>
-              <p>до 3000</p>
+              <label class="min-price">
+                <p class="price-text">от</p>
+                 <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                <p class="price-text">до</p>
+                <input type="number" name="max-price" value="3000">
+              </label>
             </div>
-            <!-- <input class="filter-input-range filter-input" type="range" min="0" max="3000" step="1000"> -->
             <div class="filter-input-range">
               <div class="scale">
                 <div class="bar"></div>
@@ -117,18 +122,7 @@
               </div>
             </div>
             <div class="results-rating">
-              <p><svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg></p>
+              <p class="four-stars"></p>
               <p class="result-rating">Рейтинг: 8,5</p>
             </div>
           </li>
@@ -144,15 +138,7 @@
               </div>
             </div>
             <div class="results-rating">
-              <p><svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg></p>
+              <p class="three-stars"></p>
               <p class="result-rating">Рейтинг: 8,9</p>
             </div>
           </li>
@@ -168,12 +154,7 @@
               </div>
             </div>
             <div class="results-rating">
-              <p><svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg></p>
+              <p class="two-stars"></p>
               <p class="result-rating">Рейтинг: 9,2</p>
             </div>
           </li>

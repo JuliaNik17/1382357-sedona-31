@@ -642,6 +642,7 @@ img {
 }
 
 .footer-copyright a {
+  height: 33px;
   margin-top: 43px;
 }
 
@@ -654,6 +655,9 @@ img {
   fill: var(--basic-black);
 }
 
+
+
+.footer-copyright a:focus, 
 .footer-logo:hover,
 .footer-logo:focus {
   fill: var(--basic-blue);
@@ -678,6 +682,7 @@ img {
   padding-top: 26px;
   padding-left: 72px;
   padding-right: 73px;
+  padding-bottom: 32px;
   column-gap: 200px;
   
 }
@@ -879,7 +884,6 @@ fieldset {
   font-size: 14px;
   line-height: 21px;
   margin-left: 90px;
-  margin-bottom: 32px;
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 2px;

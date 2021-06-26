@@ -504,6 +504,7 @@ img {
   text-align: center;
 }
 
+
 .guests-minus-button {
   width: 38px;
   height: 38px;
@@ -573,7 +574,7 @@ img {
   overflow: visible;
 }
 
-.map img {
+.map iframe {
   display: block;
   width: 100%;
 }
@@ -587,6 +588,7 @@ img {
   text-align: center; 
   /* background: var(--basic-white) 0.2; */
   background: rgba(255, 255, 255, 0.9);
+  z-index: 2;
   }
 
   .footer-contacts {

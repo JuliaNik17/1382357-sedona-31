@@ -18,7 +18,7 @@ try {
 }
 
 hotelButton.addEventListener ("click", function(evt) {
-    hotelPopup.classList.add('popup-shown');
+    hotelPopup.classList.toggle('popup-shown');
 
     if (storageAdults, storageChildren) {
         adultGuests.value = storageAdults;

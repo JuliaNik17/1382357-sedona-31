@@ -103,17 +103,21 @@
         <p class="hotel-search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         <button type="button" class="hotel-search-button">Поиск гостиницы в Седоне</button>
 
-        <form class="hotel-search-popup" method="get" action="https://echo.htmlacademy.ru">
+        <form class="popup hotel-popup" method="POST" action="https://echo.htmlacademy.ru">
           <div class="hotel-search-item">
             <label for="arrival-date">Дата заезда:</label>
-            <input id="arrival-date" type="text" name="date" placeholder="24 апреля 2017">
-            <button type="button" class="booking-date-button"></button>
+            <div class="date-wrapper">
+              <input class="arrival-date" id="arrival-date" type="text" name="date" placeholder="24 апреля 2017">
+              <button type="button" class="booking-date-button"></button>
+            </div>
           </div>
           
           <div class="hotel-search-item">
             <label for="departure-date">Дата выезда:</label>
-            <input id="departure-date" type="text" name="date" placeholder="4 июля 2017">
-            <button type="button" class="booking-date-button"></button>
+            <div class="date-wrapper">
+              <input class="departure-date" id="departure-date" type="text" name="date" placeholder="4 июля 2017">
+              <button type="button" class="booking-date-button"></button>
+            </div>
           </div>
 
           <div class="hotel-search-guests">
@@ -121,18 +125,18 @@
             <div class="guests-wrapper">
               <label for="adult-guests">Взрослые:</label>
               <button type="button" name="guests-minus" class="guests-minus-button"></button>
-              <input id="adult-guests" type="text" name="guests" placeholder="2">
+              <input class="adult-guests" id="adult-guests" type="text" name="guests" placeholder="2">
               <button type="button" name="guests-plus" class="guests-plus-button"></button> 
             </div>
 
             <div class="guests-wrapper">
               <label for="children-guests">Дети:</label>
               <button type="button" name="guests-minus" class="guests-minus-button"></button>
-              <input id="children-guests" type="text" name="guests" placeholder="0">
+              <input class="children-guests" id="children-guests" type="text" name="guests" placeholder="0">
               <button type="button" name="guests-plus" class="guests-plus-button"></button>
             </div>
           </div>
-          <button type="button" class="find-button">Найти</button>
+          <button type="submit" class="find-button">Найти</button>
         </form>
 
       </section>
@@ -185,6 +189,6 @@
       </section>
 
     </footer>
-    
+    <script src="js/popup.min.js"></script>
   </body>
 </html>

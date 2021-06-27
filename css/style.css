@@ -38,7 +38,7 @@
     src: url("../fonts/PTSans-Bold.woff") format("woff"),
          url("../fonts/PTSans-Bold.woff2") format("woff2");
          font-weight: 700;
-         font-style: bold;
+         font-style: normal;
 }
 
 /* Global */
@@ -586,7 +586,6 @@ img {
   display: flex;
   justify-content: space-around;
   text-align: center; 
-  /* background: var(--basic-white) 0.2; */
   background: rgba(255, 255, 255, 0.9);
   z-index: 2;
   }
@@ -617,7 +616,6 @@ img {
 .footer-social ul {
   display: flex;
   justify-content: space-between;
-  /* column-gap: 6px; */
   list-style: none;
   padding-left: 0;
   margin-top: 36px;
@@ -626,10 +624,6 @@ img {
 
 .footer-social li {
   display: flex;
-  /* justify-content: center;
-  align-items: center;
-  width: 46px;
-  height: 48px; */
   background-color: var(--basic-blue);
   margin-right: 6px;
 }
@@ -762,7 +756,8 @@ fieldset {
   background-image: url("../img/checkbox-off.svg");
 }
 
-.filter-input-checkbox + label::before:disabled {
+
+.filter-input-checkbox:disabled + label::before{
   background-image: url("../img/checkbox-off-grey.svg");
 }
 
@@ -778,7 +773,7 @@ fieldset {
   background-position: 0 0;
 }
 
-.filter-input-checkbox:checked + label::before:disabled {
+.filter-input-checkbox:checked:disabled + label::before {
   background-image: url("../img/checkbox-on-grey.svg");
 }
 
@@ -810,20 +805,19 @@ fieldset {
   color: var(--basic-white);
 }
 
-.price-text {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--basic-white);
-  margin: 0;
-  margin-right: 5px;
-}
+
 .min-price,
 .max-price {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  margin: 0;
+  margin-right: 5px;
 }
 
 .min-price input,
@@ -1010,9 +1004,7 @@ fieldset {
   padding-left: 0;
   border-top: solid var(--special-extra-light-grey) 1px;
   margin-bottom: 0;
-  margin-top: 0;
-  /* padding: 31px 72px; */
-  
+  margin-top: 0;  
 }
 
 .results li {

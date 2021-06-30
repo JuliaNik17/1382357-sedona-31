@@ -19,10 +19,14 @@
           <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <div class="navigation-wrapper-left">
+            <li><a href="blank.html">Информация</a></li>
+            <li><a href="blank.html">Фото и видео</a></li>
+          </div>
+          <div class="navigation-wrapper-right">
+            <li><a href="blank.html">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
+          </div>
         </ul>
       </nav>
     </header>
@@ -37,7 +41,7 @@
       </section>
       
       <section class="town">
-        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
 
@@ -46,8 +50,8 @@
         <div class="feature-first">
           <div class="feature-item-blue">
             <h3>Настоящий городок</h3>
-            <p class="feature-item-blue-number">- №1 -</p>
-            <p class="feature-item-blue-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="feature-item-blue-number">&mdash; №1 &mdash;</p>
+            <p class="feature-item-blue-text">Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
           <img src="img/photo_of_sedona.jpg" width="800" height="256" alt="Фото города">
         </div>
@@ -71,7 +75,7 @@
           <img src="img/bridge_of_devil.jpg" width="800" height="256" alt="Фото моста дьявола">
           <div class="feature-item-blue">
             <h3>Там есть мост дьявола</h3>
-            <p class="feature-item-blue-number">- №2 -</p>
+            <p class="feature-item-blue-number">&mdash; №2 &mdash;</p>
             <p class="feature-item-blue-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
@@ -79,20 +83,20 @@
         <ul class="features-list">                
           <li class="feature-item">
             <h3>Небольшая площадь</h3>
-            <p>- №3 -</p>
+            <p>&mdash; №3 &mdash;</p>
             <p class="feature-item-text">Все достопримечательности находятся очень близко</p>
           </li>
 
           <li class="feature-item">
             <h3>Красивая дорога</h3>
-            <p>- №4 -</p>
+            <p>&mdash; №4 &mdash;</p>
             <p class="feature-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
 
           <li class="feature-item">
             <h3>Мало <br>туристов</h3>
-            <p>- №5 -</p>
-            <p class="feature-item-text">Большинство едет в Гранд Каньон и толпится там</p>
+            <p>&mdash; №5 &mdash;</p>
+            <p class="feature-item-text-less">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
       </section>
@@ -100,7 +104,7 @@
       <section class="hotel-search">
         <h2 class="hidden">Поиск гостиницы в Седоне</h2>
         <p class="hotel-search-question">Заинтересовались?</p>
-        <p class="hotel-search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        <p class="hotel-search-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         <button type="button" class="hotel-search-button">Поиск гостиницы в Седоне</button>
 
         <form class="popup hotel-popup popup-shown" method="POST" action="https://echo.htmlacademy.ru">
@@ -123,14 +127,14 @@
           <div class="hotel-search-guests">
             
             <div class="guests-wrapper">
-              <label for="adult-guests">Взрослые:</label>
+              <label for="adult-guests" class="adults">Взрослые:</label>
               <button type="button" name="guests-minus" class="guests-minus-button"></button>
               <input class="adult-guests" id="adult-guests" type="text" name="guests" placeholder="2">
               <button type="button" name="guests-plus" class="guests-plus-button"></button> 
             </div>
 
             <div class="guests-wrapper">
-              <label for="children-guests">Дети:</label>
+              <label for="children-guests" class="kids">Дети:</label>
               <button type="button" name="guests-minus" class="guests-minus-button"></button>
               <input class="children-guests" id="children-guests" type="text" name="guests" placeholder="0">
               <button type="button" name="guests-plus" class="guests-plus-button"></button>
@@ -171,7 +175,7 @@
       <section class="footer-copyright">
         <h2 class="hidden">Авторские права</h2>
         <p class="footer-copyright-text">Website by</p>
-        <a href="https://htmlacademy.ru">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
           <svg class="footer-logo" aria-hidden="true" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z"/>
             <path d="M11.6466 4.52562C10.0863 4.52562 8.82534 5.23341 8.03454 6.26294H7.94905V0H5.91864V15.4429H7.94905V10.1451C7.94905 8.02172 9.27418 6.49888 11.2191 6.49888C13.0572 6.49888 14.1258 7.87158 14.1258 9.71614V15.4429H16.1563V9.35153C16.1563 6.41308 14.3396 4.52562 11.6466 4.52562Z"/>

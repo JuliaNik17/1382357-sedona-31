@@ -62,9 +62,7 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  box-shadow: -5px 0 5px 5px var(--special-grey),
-               5px 0 5px 5px var(--special-grey);
-  /* border-left: 40px var(--basic-middle-grey); */
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -126,29 +124,30 @@ img {
   justify-content: space-between;
 }
 
-.navigation-wrapper-left {
-  width: 460px;
-  display: flex;
-  flex-wrap: wrap;
+.site-navigation li {
+  width: 200px;
 }
 
-.navigation-wrapper-right {
-  width: 460px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+.site-navigation li:first-child,
+.site-navigation li:nth-child(2) {
+  text-align: start;
 }
 
-.navigation-wrapper-left li:first-child {
-  margin-right: 123px;
+.site-navigation li:nth-child(2) {
+  margin-left: 30px;
 }
 
-.navigation-wrapper-left li:last-child {
-  margin-left: 12px;
+.site-navigation li:nth-child(3),
+.site-navigation li:last-child {
+  text-align: right;
 }
 
-.navigation-wrapper-right li:last-child {
-  margin-left: 146px;
+.site-navigation li:nth-child(3) {
+  margin-left: 200px;
+}
+
+.site-navigation li:last-child {
+  margin-left: 26px;
 }
 
 .site-navigation a {
@@ -1183,26 +1182,29 @@ fieldset {
 }
 
 .two-stars {
-  width: 38px;
+  width: 42px;
   height: 18px;
   text-align: right;
-  background: url(../img/star.svg) repeat;
+  background-image: url(../img/star.svg);
+  background-repeat: round space;
   margin-right: 5px;
 }
 
 .three-stars {
-  width: 57px;
+  width: 66px;
   height: 18px;
   text-align: right;
-  background: url(../img/star.svg) repeat;
+  background-image: url(../img/star.svg);
+  background-repeat: round space;
   margin-right: 5px;
 }
 
 .four-stars {
-  width: 77px;
+  width: 85px;
   height: 18px;
   text-align: right;
-  background: url(../img/star.svg) repeat;
+  background-image: url(../img/star.svg);
+  background-repeat: round space;
   margin-right: 5px;
 }
 
@@ -1210,7 +1212,8 @@ fieldset {
   width: 95px;
   height: 18px;
   text-align: right;
-  background: url(../img/star.svg) repeat;
+  background-image: url(../img/star.svg);
+  background-repeat: round space;
   margin-right: 5px;
 }
 

@@ -121,7 +121,7 @@ img {
   list-style: none;
   padding-left: 0; 
   margin: 15px 72px;
-  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .site-navigation li {
@@ -133,7 +133,16 @@ img {
   text-align: start;
 }
 
+.site-navigation li:nth-child(1+4n),
+.site-navigation li:nth-child(2+4n) {
+  text-align: start;
+}
+
 .site-navigation li:nth-child(2) {
+  margin-left: 30px;
+}
+
+.site-navigation li:nth-child(2+4n) {
   margin-left: 30px;
 }
 
@@ -142,11 +151,24 @@ img {
   text-align: right;
 }
 
+.site-navigation li:nth-child(3+4n),
+.site-navigation li:nth-child(4n) {
+  text-align: right;
+}
+
 .site-navigation li:nth-child(3) {
   margin-left: 200px;
 }
 
+.site-navigation li:nth-child(3+4n) {
+  margin-left: 200px;
+}
+
 .site-navigation li:last-child {
+  margin-left: 26px;
+}
+
+.site-navigation li:nth-child(4n) {
   margin-left: 26px;
 }
 
@@ -186,7 +208,7 @@ img {
     position: relative;
     max-width: 1200px;
     height: 509px;
-    background: url(../img/background_index.jpg) no-repeat 100% 100%;
+    background: var(--basic-blue) url(../img/background_index.jpg) no-repeat 100% 100%;
     margin: 0 0 42px;
   }
 
@@ -241,7 +263,6 @@ img {
 .advantages-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* column-gap: 120px; */
   margin: 0;
   margin-bottom: 82px;
   padding: 0;
@@ -318,11 +339,11 @@ img {
 }
 
 .feature-item-blue {
+  width: 400px;
   color: var(--basic-white);
 }
 
 .feature-item-blue h3 {
-  width: 150px;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
@@ -337,7 +358,7 @@ img {
 }
 
 .feature-item-blue-text {
-  margin: 0 47px 54px;
+  margin: 0 45px 54px;
   text-align: center;
 }
   
@@ -405,8 +426,6 @@ img {
 }
 
 .hotel-search-button {
-  width: 568px;
-  height: 86px;
   margin: 0 auto;
   background-color: var(--basic-light-brown);
   color: var(--basic-white);
@@ -414,7 +433,7 @@ img {
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  padding: 30px 124px 30px 124px;
+  padding: 30px 140px;
   border: none;
 }
 
@@ -608,8 +627,6 @@ img {
 }
 
 .find-button {
-  width: 458px;
-  height: 58px;
   margin: 0 auto 55px;
   background-color: var(--basic-blue);
   color: var(--basic-white);
@@ -618,6 +635,7 @@ img {
   line-height: 26px;
   text-transform: uppercase;
   border: none;
+  padding: 17px 195px 15px;
 }
 
 .find-button:hover,
@@ -636,6 +654,7 @@ img {
   width: 100%;
   height: 474px;
   overflow: visible;
+  background: var(--basic-light-grey) url(../img/map.jpg);
 }
 
 .map iframe {
@@ -648,16 +667,13 @@ img {
 .main-footer {
   max-width: 1200px;
   display: flex;
-  justify-content: space-around;
   text-align: center; 
   background: rgba(255, 255, 255, 0.9);
   z-index: 2;
   }
 
   .footer-contacts {
-    margin-top: 23px;
-    margin-bottom: 25px;
-    margin-left: 58px;
+    margin: 24px 152px;
   }
 
 .footer-contacts p {
@@ -678,19 +694,23 @@ img {
   text-align: center;  
 }
 
+.footer-social {
+  margin: 21px 53px;
+  max-width: 160px;
+}
+
 .footer-social ul {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
-  padding-left: 17px;
-  margin-top: 36px;
-  margin-bottom: 36px;
+  padding: 0;
 }
 
 .footer-social li {
   display: flex;
   background-color: var(--basic-blue);
   margin-right: 6px;
+  margin-bottom: 2px;
 }
 
 .footer-social li:last-child {
@@ -712,24 +732,24 @@ img {
 
 .social-button:active {
   background-color: var(--basic-dark-blue); 
-  color: var(--basic-blue); 
+  opacity: 0.3;
 }
 
 .footer-copyright {
   display: flex;
   line-height: 26px;
   color: var(--basic-black);
-  margin-right: 35px;
+  text-align: center;
+  margin: 45px 127px;
 }
 
 .footer-copyright a {
   height: 33px;
-  margin-top: 43px;
+  margin-left: 4px;
 }
 
 .footer-copyright-text {
-  margin-top: 47px;
-  margin-right: 15px;
+  margin: 0 12px;
 }
 
 .footer-logo {
@@ -752,9 +772,7 @@ img {
 
   .filters {
     margin-bottom: 30px;
-    background-image: url(../img/background_catalog.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background: var(--basic-dark-blue) url(../img/background_catalog.jpg) no-repeat;
   }
 
 .filter {
@@ -900,7 +918,6 @@ fieldset {
   line-height: 21px;
   color: var(--basic-white);
   margin: 0;
-  /* margin-right: 5px; */
 }
 
 .min-price {
@@ -985,8 +1002,7 @@ fieldset {
 }
 
 .filter-button {
-  width: 137px;
-  height: 36px;
+  padding: 7px 34px 6px;
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
@@ -1066,10 +1082,12 @@ fieldset {
 .sorting a:hover,
 .sorting a:focus {
   color: var(--basic-blue);
+  opacity: 1;
 }
 
 .sorting a:active {
   color: var(--basic-black);
+  opacity: 1;
   border-bottom: none;
 }
 
@@ -1220,6 +1238,7 @@ fieldset {
 
 .result-rating {
   display: inline-block;
+  vertical-align: baseline;
   background-color: var(--basic-middle-grey);
   text-align: center;
   color: var(--special);
@@ -1230,8 +1249,6 @@ fieldset {
 
 .more-info-button{
   background-color: var(--basic-blue);
-  width: 110px;
-  height: 27px;
   color: var(--basic-white);
   font-weight: bold;
   font-size: 14px;
@@ -1239,6 +1256,8 @@ fieldset {
   align-items: center;
   text-transform: uppercase;
   border: none;
+  padding: 3px 15px;
+  margin-right: 6px;
 }
 
 .more-info-button:hover,
@@ -1252,8 +1271,6 @@ fieldset {
 }
 
 .booking-button {
-  width: 142px;
-  height: 27px;
   background-color: var(--basic-light-brown);
   color: var(--basic-white);
   font-weight: bold;
@@ -1261,6 +1278,7 @@ fieldset {
   line-height: 21px;
   text-transform: uppercase;
   border: none;
+  padding: 3px 15px;
 }
 
 .booking-button:hover,

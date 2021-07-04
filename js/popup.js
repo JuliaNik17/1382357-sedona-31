@@ -10,6 +10,10 @@ let isStorageSupport = true;
 let storageAdults = "";
 let storageChildren ="";
 
+document.addEventListener ("DOMContentLoaded", function(evt){
+  hotelPopup.classList.remove('popup-shown');
+})
+
 try {
   storageAdults = localStorage.getItem("adults");
   storageChildren = localStorage.getItem("children");
